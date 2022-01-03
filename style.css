@@ -1,0 +1,133 @@
+*{
+    font-family: "JetBrains Mono", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+
+.container{
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    min-height: 75vh;
+
+    transform-style: preserve-3d;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 30px;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
+    padding: 0 5rem;
+}
+
+.picture{
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture img{
+    width: 16rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.picture .imgBackground{
+    width: 15rem;
+    height: 15rem;
+
+    background: linear-gradient(to right, gold, darkslategrey);
+    position: absolute;
+
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description{
+    text-align: center;
+    font-size: small;
+    margin-top: 0;
+}
+
+.description h2{
+    margin: 5px;
+    font-weight: lighter;
+}
+
+.size{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+
+.size p{
+    text-align: center;
+    width: 3rem;
+    background: whitesmoke;
+
+    margin-left: 1rem;
+    padding: 5px 1rem;
+
+    border-radius: 1rem;
+    box-shadow: 3px 10px 10px 3px rgba(0,0,0,0.2);
+
+    cursor: pointer;
+
+    transition: all .75s ease-out;
+}
+
+.size p:hover{
+    width: 3.5rem;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.size .active{
+    width: 3.5rem;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.purchase button{
+    background: whitesmoke;
+    color: black;
+    width: 20rem;
+    height: 3rem;
+    font-size: large;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    box-shadow: 3px 10px 10px 3px rgba(0,0,0,0.2);
+}
+
+.purchase button:hover{
+    width: 21rem;
+    height: 3.5rem;
+    background-color: black;
+    color: whitesmoke;
+}
